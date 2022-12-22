@@ -16,7 +16,7 @@ function draw() {
   let mn = minute();
   let sc = second();
 
-  strokeWeight(9);
+  strokeWeight(15);
   stroke(255, 100, 150);
   noFill();
   let secondAngle = map(sc, 0, 60, 0, 360);
@@ -24,11 +24,11 @@ function draw() {
 
   stroke(150, 100, 255);
   let minuteAngle = map(mn, 0, 60, 0, 360);
-  arc(0, 0, 480, 480, 0, minuteAngle);
+  arc(0, 0, 450, 450, 0, minuteAngle);
 
   stroke(150, 255, 100);
   let hourAngle = map(hr % 12, 0, 12, 0, 360);
-  arc(0, 0, 460, 460, 0, hourAngle);
+  arc(0, 0, 400, 400, 0, hourAngle);
 
   stroke(255);
   point(0, 0);
